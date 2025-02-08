@@ -1,6 +1,19 @@
+h1{
+    margin-top: 10px;
+}
+.fixed-position{
+    position: absolute;
+    background-color: rgb(55, 39, 124);
+    text-align: center;
+    margin-top: -15px;
+    margin-left: -10px;
+    padding: 5px;
+    width: 1920px;
+}
+
 .box-model{
-background-color: brown;
-padding: 10px;
-margin:5px;
-border:solid 5px blue;
+    padding: 15px;
+    background-color: rgb(57, 152, 200);
+    border:solid 5px darkblue;
+    margin: 20px;
 }
