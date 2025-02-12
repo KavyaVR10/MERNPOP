@@ -1,0 +1,25 @@
+/*styling for all fields*/
+
+input{
+    border: 1px solid rgb(22, 20, 24);
+    border-radius: 30px;
+    font-size: medium;
+    margin-top: 20px;
+}
+/*styling for particular fields*/
+input[type=number]
+{
+    border: 1px solid rgb(216, 32, 161);
+    border-radius: 30px; 
+}
+form{
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: antiquewhite;
+    margin: auto;
+     border-radius: 10px;
+     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2)
+}
+
+
