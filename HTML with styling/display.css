@@ -1,0 +1,17 @@
+h1{
+    display: inline;
+}
+span{
+    margin: 20px;
+    font-size: 2em;
+    font-weight: bold;
+}
+img{
+    display: block;
+}
+.disp-none{
+    display: none;
+}
+li{
+    display: inline;
+}
