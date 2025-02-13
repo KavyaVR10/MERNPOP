@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="transitionsandanimations.css">
+    <title>Transition and Animation</title>
+    <style>
+        .transition{
+           color: darkred;
+           background-color: beige;
+          /* transition: width 2s,height 4s,transform 2s;*/
+          transition:background-color 5s,width 5s,color 5s,padding 5s,height 5s,transform 5s,opacity 2s;
+        }
+        .transition:hover{
+            background-color: darkred;
+            color:beige;
+            padding: 30px;
+            height: 100px;
+            width: 300px;
+            transform: rotate(180deg);
+            opacity: 0.9;
+        }
+        @keyframes animationdiv{
+
+            0%{
+                background-color: beige;
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                background-color: rgb(92, 92, 4);
+                top: 0px;
+                left: 100px; 
+            }
+            50%{
+                background-color: blueviolet;
+                top:100px;
+                left:100px;
+            }
+            75%{
+                background-color: cadetblue;
+                top:100px;
+                left: 0px;
+            }
+            100%{
+                background-color: hotpink;
+                top:0px;
+                left:0px;
+            }
+        }
+        .animation{
+            position: relative;
+            animation: animationdiv;
+            background-color: bisque;
+            height: 100px;
+            width: 100px;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+        }
+        .animation1{
+            position: relative;
+            animation: anima;
+            background-color: bisque;
+            height: 100px;
+            width: 100px;
+            animation-duration: 0.5s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes anima{
+            from{
+                background-color: bisque;
+            }
+            to{
+               background-color: red;
+            } 
+        }
+    </style>
+</head>
+<body>
+    <h1 class="transition">This is a Transition example.</h1>
+    <h1 class="animation1">This is Animation</h1>
+    <br>
+    <div class="animation">Animation</div>
+</body>
+</html>
