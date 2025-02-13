@@ -12,6 +12,7 @@ img{
 .disp-none{
     display: none;
 }
-li{
+ol{
     display: inline;
-}
+    list-style-position: inside;
+ }
