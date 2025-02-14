@@ -21,3 +21,12 @@ console.log("This is === operator",a==b)
 console.log("This is != operator",a!=b)
 console.log("This is !== operator",a!==b)
 
+//LEFT SHIFT OPERATION
+console.log(55<<3)
+console.log(128<<1)
+console.log(8<<3)
+
+//RIGHT SHIFT OPERATION
+console.log(55>>3)
+console.log(128>>1)
+console.log(8>>3)
