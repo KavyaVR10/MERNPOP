@@ -10,12 +10,18 @@ header{
 }
 nav{
     display: flex;
-    flex-direction:column;
+    flex-direction:row;
     list-style-type: none;
     justify-content:space-evenly;
     padding: 10px
    /* gap: 30px;*/
 }
+nav li{
+    list-style-type: none;
+    font-size: large;
+    position: relative;
+ }
+
 a{
     text-decoration: none; /*Only the underline or strike are removed it doesnt remove the text features 
     so color doesnt go,because text decoration means the decoration around the text where the default color is blue which its text own property*/
@@ -30,4 +36,33 @@ a{
     color:rgb(28, 28, 28);
     background-color: white;
     border-radius:10px;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: rgb(246, 181, 198);
+    padding: 40px;
+    top: 100%;
+    border-color: rgb(101, 101, 151);
+    border-radius: 20px;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    li {
+        font-size: medium;
+        margin: 5px 0;
+    }
+
+    header img {
+        width: 40px;
+        height: 40px;
+        }
 }
