@@ -79,3 +79,12 @@ Object.entries(object2).forEach((key,value)=>{
 })
 
 
+let a=10
+while(a<12)
+{
+   console.log(a);
+   a++;
+}
+console.log(a);
+
+
