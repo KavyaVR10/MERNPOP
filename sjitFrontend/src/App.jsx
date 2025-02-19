@@ -6,6 +6,7 @@ import Navbar from "./components/FunctionalComponents/navbar";
 import ClassComponentEG from "./components/classComponent/ClassComponentEG"; // FIXED
 import Gallery from "./components/FunctionalComponents/Gallery";
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
+import UseEffect from "./components/FunctionalComponents/Hooks/UseEffect";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path='/Gallery' element={<Gallery />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/SignUp' element={<SignUp />} />
+        <Route path='/use-effect' element={<UseEffect />} />
       </Routes>
       </BrowserRouter>
          </main>
