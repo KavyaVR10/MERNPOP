@@ -20,6 +20,8 @@ function About() {
       >
         +
       </button>
+      <hr />
+      <button onClick={()=>{setNum(num=0);}}>Reset</button>
     </div>
   );
 }

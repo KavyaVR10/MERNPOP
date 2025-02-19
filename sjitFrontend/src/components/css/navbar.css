@@ -1,12 +1,75 @@
-/**{
+/* Navbar Styling */
+nav {
     margin: 0;
-    padding: auto;
-}*/
-
-nav{
+    padding: 15px;
     display: flex;
+    align-items: center;
     list-style-type: none;
-    background-color: chocolate;
-    color: aliceblue;
+    background-color: palevioletred;
     justify-content: space-around;
+    font-size: large;
+    height: 50px;
+}
+
+.custom-link {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    transition: background 0.3s ease;
+}
+
+.custom-link:hover {
+    background-color: white;
+    border-radius: 20px;
+}
+
+/* Dropdown Container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* Dropdown Button */
+.DropDown {
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+/* Change color on hover */
+.DropDown:hover {
+    color: white;
+}
+
+/* Dropdown Content - Initially Hidden */
+.DropDown-Content {
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    background-color: white;
+    min-width: 120px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+/* Style dropdown items */
+.DropDown-Content li {
+    padding: 10px;
+    text-align: center;
+    list-style: none;
+}
+
+.DropDown-Content li:hover {
+    background-color: palevioletred;
+}
+
+/* Show dropdown when parent is hovered */
+.dropdown:hover .DropDown-Content {
+    display: block;
 }
