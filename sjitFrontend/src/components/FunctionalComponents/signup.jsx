@@ -90,7 +90,7 @@ const SignUp = () => {
                 {errors.confirmPassword && <small className="error-message">{errors.confirmPassword}</small>}
 
                 <button type="submit">SIGN UP</button>
-            </form>
+            </form> 
         </div>
     );
 };

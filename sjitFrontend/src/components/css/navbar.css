@@ -16,7 +16,6 @@ nav {
     text-decoration: none;
     text-align: center;
     padding: 10px;
-    transition: background 0.3s ease;
 }
 
 .custom-link:hover {
@@ -28,29 +27,27 @@ nav {
 .dropdown {
     position: relative;
     display: inline-block;
-    cursor: pointer;
 }
 
 /* Dropdown Button */
 .DropDown {
     padding: 10px;
     font-weight: bold;
-    cursor: pointer;
-    transition: color 0.3s;
 }
 
 /* Change color on hover */
 .DropDown:hover {
-    color: white;
+    background-color: white;
+    border-radius: 20px;
 }
 
 /* Dropdown Content - Initially Hidden */
 .DropDown-Content {
-    display: none;
+    display: block;
     position: absolute;
+    background-color: palevioletred;
     top: 35px;
     left: 0;
-    background-color: white;
     min-width: 120px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
