@@ -11,6 +11,15 @@ nav {
     height: 50px;
 }
 
+/* Main Navbar items (displayed in row) */
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
 .custom-link {
     color: black;
     text-decoration: none;
@@ -43,7 +52,7 @@ nav {
 
 /* Dropdown Content - Initially Hidden */
 .DropDown-Content {
-    display: block;
+    display: none; /* Initially hidden */
     position: absolute;
     background-color: palevioletred;
     top: 35px;
@@ -53,9 +62,11 @@ nav {
     border-radius: 5px;
     overflow: hidden;
     z-index: 1000;
+    /* Display items in a column */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Align items vertically (column-wise) */
 }
 
-/* Style dropdown items */
 .DropDown-Content li {
     padding: 10px;
     text-align: center;
@@ -63,10 +74,44 @@ nav {
 }
 
 .DropDown-Content li:hover {
-    background-color: palevioletred;
+    background-color: white;
 }
 
 /* Show dropdown when parent is hovered */
 .dropdown:hover .DropDown-Content {
-    display: block;
+    display: flex; /* Make dropdown visible */
+}
+
+/* Memoization Dropdown */
+.memo-container {
+    display: none; /* Initially hidden */
+    position: absolute;
+    background-color: palevioletred;
+    top: 35px;
+    left: 0;
+    min-width: 120px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1000;
+    /* Memoization items also in column-wise */
+    display: flex;
+    flex-direction: column;
+}
+
+.memo-container ol {
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Align items vertically (column-wise) */
+    padding-left: 0; /* Remove list indentation */
+    margin: 0; /* Remove default margin */
+}
+
+.memo-container li {
+    padding: 10px;
+    text-align: center;
+    list-style: none;
+}
+
+.memo-container li:hover {
+    background-color: white;
 }
